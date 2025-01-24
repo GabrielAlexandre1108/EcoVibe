@@ -257,7 +257,19 @@ article#visao > p{
     border-radius: 50%;
 }
 
-.aparecer > a{
+.aparecer:active{
+    bottom: 27.5px;
+    right: 27.5px;
+
+    width: 45px;
+    height: 45px;
+}
+
+.aparecer > input{
+    width: 100%;
+    height: 100%;
+
     color: white;
-    text-decoration: none;
+    background-color: transparent;
+    border: 0px;
 }
