@@ -131,12 +131,15 @@ picture{
 
 div#txt_historia{
     max-width: 393px;
+    max-height: 359px;
 
     margin-bottom: 15px;
     padding: 0px 5px;
 
+    overflow: hidden;
     background-color: rgba(233, 233, 233, 1);
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.158);
+    will-change: max-height, padding;
 }
 
 div#txt_historia > div{
