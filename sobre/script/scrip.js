@@ -11,6 +11,20 @@ function voltar(){
     });
 };
 
+/* Mostra o menu quando o icone e clicado */
+
+document.querySelector('#img_menu').addEventListener("click", function(){
+    document.querySelector('#menu').style.display = 'flex'
+    document.querySelector('#fundo_menu').style.display = 'block'
+})
+
+document.querySelector('#menu').addEventListener("click", function(){
+    document.querySelector('#menu').style.display = 'none'
+    document.querySelector('#fundo_menu').style.display = 'none'
+})
+
+/* Mostra o texto ao clicar no título "HISTÓRIA" */
+
 function mostrar_historia(){
     let txtHistoria = document.querySelector('#txt_historia')
 
