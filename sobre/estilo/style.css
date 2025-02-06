@@ -1,7 +1,10 @@
 @charset "UTF-8";
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
+@import url('https://cdn-uicons.flaticon.com/2.6.0/uicons-regular-rounded/css/uicons-regular-rounded.css');
 
 *{
     margin: 0px;
@@ -218,6 +221,7 @@ div#txt_historia{
     will-change: max-height, padding;
 
     animation: descer_historia 1.8s;
+    animation-delay: 1s;
 }
 
 @keyframes descer_historia{
@@ -333,13 +337,32 @@ article#visao > p{
     line-height: 35px;
 }
 
+/* article#valores{
+    height: 425;
+
+    background-color: gray;
+} */
+
+article#valores #valores_carrossel{
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+article#valores .valor{
+    width: 50px;
+    height: 50px;
+    background-color: gray;
+}
+
 .aparecer{
     position: fixed;
     bottom: 15px;
     right: 15px;
 
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -358,12 +381,52 @@ article#visao > p{
     height: 40px;
 }
 
-.aparecer > input{
-    width: 100%;
-    height: 100%;
-
+.fi{
+    font-size: 24px; 
+    /* color: rgb(100, 100, 100); */ 
     color: white;
-    background-color: transparent;
-    border: 0px;
+
+    background-color: none;
 }
 
+footer{
+    width: 100%;
+
+    padding: 20px 25px;
+
+    background-color: #3D6A4E;
+    text-align: center;
+}
+
+footer > h2, footer > h3{
+    margin-bottom: 10px;
+
+    color: #F4E1C1;
+}
+
+footer > p:not(:last-child){
+    line-height: 35px;
+    padding: 10px 0px;
+
+    color: #D1B89D;
+}
+
+footer > p:not(:nth-child(3)){
+    color: #9b8976;
+}
+
+footer > p > a{
+    color: #A8D5BA;
+    text-decoration: none;
+}
+
+footer > p > a:hover {
+    color: #6BBF59; /* Muda a cor do link ao passar o mouse */
+}
+
+footer hr {
+    border: 0;
+    height: 1px;
+    background-color: #9b8976;
+    margin: 20px 0;
+}

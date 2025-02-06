@@ -18,10 +18,12 @@ document.querySelector('#img_menu').addEventListener("click", function(){
     document.querySelector('#fundo_menu').style.display = 'block'
 })
 
-document.querySelector('#menu').addEventListener("click", function(){
+/* Oculta o menu ao clicar nele ou no fundo */
+
+function ocultar_menu(){
     document.querySelector('#menu').style.display = 'none'
     document.querySelector('#fundo_menu').style.display = 'none'
-})
+}
 
 /* Mostra o texto ao clicar no título "HISTÓRIA" */
 
@@ -35,3 +37,5 @@ function mostrar_historia(){
 }   else{
         txtHistoria.style.maxHeight = '0px'
 }}
+
+

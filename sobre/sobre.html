@@ -14,8 +14,8 @@
         <div id="logo"></div>
         <nav>
             <img src="imagens/menu.png" alt="" id="img_menu">
-            <div id="fundo_menu"></div>
-            <div id="menu">
+            <div id="fundo_menu" onclick="ocultar_menu()"></div>
+            <div id="menu" onclick="ocultar_menu()">
                 <div id="indicador_menu"></div>
                 <ul>
                     <li><a href="#historia">História</a></li>
@@ -61,7 +61,26 @@
             <h2>Visão</h2>
             <p>Ser reconhecida como a principal referência em produtos ecológicos e sustentáveis no Brasil, liderando o mercado com inovação, transparência e impacto positivo em todas as etapas da cadeia de produção e consumo.</p>
         </article>
-        <div id="botao"><input type="button" value="↑" onclick="voltar()"></div>
+        <article id="valores">
+            <h2>Valores</h2>
+            <div id="valores_carrossel">
+                <div class="valor"></div>
+                <div class="valor"></div>
+                <div class="valor primeiro">Teste</div>
+                <div class="valor"></div>
+                <div class="valor"></div>
+            </div>
+        </article>
+
+        <div id="botao" onclick="voltar()"><i class="fi fi-rr-angle-small-up"></i></div>
     </section>
+    <footer>
+        <h2>EcoVibe</h2>
+        <h3>Créditos</h3>
+        <p>Uicons por <a href="https://www.flaticon.com/uicons" target="_blank">Flaticon</a></p>
+        <hr>
+        <p>© 2025 EcoVibe. Todos os direitos reservados.</p>
+        <p>Criado por Gabriel Alexandre</p>
+    </footer>
 </body>
 </html>
