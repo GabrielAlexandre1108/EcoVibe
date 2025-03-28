@@ -337,24 +337,138 @@ article#visao > p{
     line-height: 35px;
 }
 
-/* article#valores{
-    height: 425;
-
-    background-color: gray;
-} */
-
-article#valores #valores_carrossel{
-    display: flex;
-    flex-direction: row;
-
-    align-items: center;
-    justify-content: space-between;
+article#valores{
+    position: relative;
+    width: 100%;
+    height: 550px;
 }
 
-article#valores .valor{
-    width: 50px;
-    height: 50px;
-    background-color: gray;
+.slider{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    width: 100%;
+    height: 100%;
+
+    border-top: 2px solid #558443;
+
+    overflow: hidden;
+}
+
+.slider > h2{
+    padding-top: 20px;
+
+    color: #797979;
+    text-align: center;
+}
+
+.slider-content{
+    width: 400%;
+    height: auto;
+    display: flex;
+}
+
+input{
+    display: none;
+}
+
+.card-box{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 50vw;
+    height: 50vh;
+
+    transform: translateX(-150%);
+    transition: transform .5s;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    width: 160px;
+    height: 275px;
+    padding: 15px 10px;
+
+    color: white;
+    font-weight: bold;
+
+    background: rgba(139, 180, 141, 0.6);
+    border: 2px solid rgb(139, 180, 141);
+    border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.245);
+
+    transition: transform .5s;
+}
+
+.card > h3{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.card > p {
+    text-align: justify;
+    color: #668a67
+}
+
+.nav-manual{
+    position: absolute;
+
+    width: 100%;
+    top: 88%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-manual .manual-btn{
+    background-color:#d9d9d9 ;
+    padding: 5px;
+    border-radius: 50%;
+    cursor: pointer;
+
+    transition: .2s;
+}
+
+.nav-manual .manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+/* .nav-manual .manual-btn:hover{
+    background-color: #5a6b82;
+} */
+
+#radio1:checked ~ .nav-manual .primeiro, #radio2:checked ~ .nav-manual .segundo, #radio3:checked ~ .nav-manual .terceiro, #radio4:checked ~ .nav-manual .quarto, #radio5:checked ~ .nav-manual .quinto{
+    border: 1px solid #8BB48D;
+    background-color: #8BB48D;
+}
+
+#radio1:checked ~ .card-box{
+    transform: translateX(50%);
+}
+
+#radio2:checked ~ .card-box{
+    transform: translateX(-50%);
+}
+
+#radio3:checked ~ .card-box{
+    transform: translateX(-150%);
+}
+
+#radio4:checked ~ .card-box{
+    transform: translateX(-250%);
+}
+
+#radio5:checked ~ .card-box{
+    transform: translateX(-350%);
+}
+
+#radio1:checked ~ .card-box:nth-child(6) .card,#radio2:checked ~ .card-box:nth-child(7) .card,#radio3:checked ~ .card-box:nth-child(8) .card,#radio4:checked ~ .card-box:nth-child(9) .card,#radio5:checked ~ .card-box:nth-child(10) .card{
+    transform: scale(1.2);
 }
 
 .aparecer{

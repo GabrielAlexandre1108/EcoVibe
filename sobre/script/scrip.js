@@ -1,3 +1,21 @@
+var cont = 3
+
+document.getElementById('radio3').checked = true
+
+setInterval(() => {
+proximoCard()
+}, 7000)
+
+function proximoCard(){
+cont++
+
+if(cont > 5){
+    cont = 1
+}
+
+document.getElementById('radio' + cont).checked = true
+}
+
 window.addEventListener("scroll", function(){
     let botao = document.querySelector('#botao')
 
