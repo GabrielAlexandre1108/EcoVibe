@@ -4,7 +4,7 @@ document.getElementById('radio3').checked = true
 
 setInterval(() => {
 proximoCard()
-}, 7000)
+}, 5000)
 
 function proximoCard(){
 cont++
